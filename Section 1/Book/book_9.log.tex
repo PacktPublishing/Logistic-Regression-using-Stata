@@ -1,0 +1,18 @@
+. gen boxtid = gpa*ln(gpa)
+{\smallskip}
+. logistic withdraw gpa boxtid
+{\smallskip}
+Logistic regression                             Number of obs     =     25,160
+                                                LR chi2(2)        =     442.63
+                                                Prob > chi2       =     0.0000
+Log likelihood = -2248.4614                     Pseudo R2         =     0.0896
+{\smallskip}
+\HLI{13}{\TOPT}\HLI{64}
+    withdraw {\VBAR} Odds Ratio   Std. Err.      z    P>|z|     [95\% Conf. Interval]
+\HLI{13}{\PLUS}\HLI{64}
+         gpa {\VBAR}   4.819065   2.114356     3.58   0.000     2.039387    11.38744
+      boxtid {\VBAR}   .7209326   .0605389    -3.90   0.000     .6115284    .8499095
+       _cons {\VBAR}   1.20e-07   6.88e-07    -2.78   0.005     1.59e-12    .0090799
+\HLI{13}{\BOTT}\HLI{64}
+Note: _cons estimates baseline odds.
+{\smallskip}

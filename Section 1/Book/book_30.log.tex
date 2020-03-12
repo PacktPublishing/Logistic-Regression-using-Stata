@@ -1,0 +1,7 @@
+. recode level 0 1 3 4=0 2=1 5=2, gen(level3)
+(24705 differences between level and level3)
+{\smallskip}
+. label define level3 0 "Other courses" 1 "200 level courses" 2 "500 level courses"
+{\smallskip}
+. label values level3 level3 
+{\smallskip}

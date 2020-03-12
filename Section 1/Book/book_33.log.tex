@@ -1,0 +1,31 @@
+. logistic withdraw gpa c.gpa\#c.gpa i.gender i.college i.spring i.level3
+{\smallskip}
+Logistic regression                             Number of obs     =     25,160
+                                                LR chi2(7)        =     539.85
+                                                Prob > chi2       =     0.0000
+Log likelihood = -2199.8495                     Pseudo R2         =     0.1093
+{\smallskip}
+\HLI{19}{\TOPT}\HLI{64}
+          withdraw {\VBAR} Odds Ratio   Std. Err.      z    P>|z|     [95\% Conf. Interval]
+\HLI{19}{\PLUS}\HLI{64}
+               gpa {\VBAR}   1.217514   .1043718     2.30   0.022     1.029211    1.440268
+                   {\VBAR}
+       c.gpa\#c.gpa {\VBAR}   .9976925   .0006185    -3.73   0.000     .9964811    .9989054
+                   {\VBAR}
+            gender {\VBAR}
+             male  {\VBAR}   1.528905   .2032302     3.19   0.001     1.178241    1.983931
+                   {\VBAR}
+           college {\VBAR}
+      Engineering  {\VBAR}   1.011603   .0971431     0.12   0.904       .83805    1.221096
+                   {\VBAR}
+            spring {\VBAR}
+           Spring  {\VBAR}   1.223419    .111875     2.21   0.027     1.022675    1.463569
+                   {\VBAR}
+            level3 {\VBAR}
+200 level courses  {\VBAR}   1.979354   .1880548     7.19   0.000     1.643056    2.384485
+500 level courses  {\VBAR}   .0726959   .0730008    -2.61   0.009     .0101564     .520333
+                   {\VBAR}
+             _cons {\VBAR}   .0016024   .0047537    -2.17   0.030     4.78e-06    .5369365
+\HLI{19}{\BOTT}\HLI{64}
+Note: _cons estimates baseline odds.
+{\smallskip}

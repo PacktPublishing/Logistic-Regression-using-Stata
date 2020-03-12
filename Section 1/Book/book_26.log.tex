@@ -1,0 +1,9 @@
+. recode semester 0 2=0 1=1, gen(spring)
+(3640 differences between semester and spring)
+{\smallskip}
+. label define spring 0 "Fall or Summer" 1 "Spring"
+{\smallskip}
+. label values spring spring
+{\smallskip}
+. label variable spring "Spring semester"
+{\smallskip}

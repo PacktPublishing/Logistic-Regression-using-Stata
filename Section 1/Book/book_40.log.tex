@@ -1,0 +1,28 @@
+. estat class, cut(0.024088)
+{\smallskip}
+Logistic model for withdraw
+{\smallskip}
+              \HLI{8} True \HLI{8}
+Classified {\VBAR}         D            {\tytilde}D  {\VBAR}      Total
+\HLI{11}{\PLUS}\HLI{26}{\PLUS}\HLI{11}
+     +     {\VBAR}       361          6973  {\VBAR}       7334
+     -     {\VBAR}       143         17683  {\VBAR}      17826
+\HLI{11}{\PLUS}\HLI{26}{\PLUS}\HLI{11}
+   Total   {\VBAR}       504         24656  {\VBAR}      25160
+{\smallskip}
+Classified + if predicted Pr(D) >= .024088
+True D defined as withdraw != 0
+\HLI{50}
+Sensitivity                     Pr( +| D)   71.63\%
+Specificity                     Pr( -|{\tytilde}D)   71.72\%
+Positive predictive value       Pr( D| +)    4.92\%
+Negative predictive value       Pr({\tytilde}D| -)   99.20\%
+\HLI{50}
+False + rate for true {\tytilde}D        Pr( +|{\tytilde}D)   28.28\%
+False - rate for true D         Pr( -| D)   28.37\%
+False + rate for classified +   Pr({\tytilde}D| +)   95.08\%
+False - rate for classified -   Pr( D| -)    0.80\%
+\HLI{50}
+Correctly classified                        71.72\%
+\HLI{50}
+{\smallskip}

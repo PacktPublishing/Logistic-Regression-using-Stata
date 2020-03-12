@@ -1,0 +1,38 @@
+. margins, at(gender=(0 1) level3=(0 1 2))
+{\smallskip}
+Predictive margins                              Number of obs     =     25,160
+Model VCE    : OIM
+{\smallskip}
+Expression   : Pr(withdraw), predict()
+{\smallskip}
+1._at        : gender          =           0
+               level3          =           0
+{\smallskip}
+2._at        : gender          =           0
+               level3          =           1
+{\smallskip}
+3._at        : gender          =           0
+               level3          =           2
+{\smallskip}
+4._at        : gender          =           1
+               level3          =           0
+{\smallskip}
+5._at        : gender          =           1
+               level3          =           1
+{\smallskip}
+6._at        : gender          =           1
+               level3          =           2
+{\smallskip}
+\HLI{13}{\TOPT}\HLI{64}
+             {\VBAR}            Delta-method
+             {\VBAR}     Margin   Std. Err.      z    P>|z|     [95\% Conf. Interval]
+\HLI{13}{\PLUS}\HLI{64}
+         _at {\VBAR}
+          1  {\VBAR}   .0102844   .0013374     7.69   0.000     .0076631    .0129057
+          2  {\VBAR}   .0199691   .0023579     8.47   0.000     .0153478    .0245904
+          3  {\VBAR}   .0007649     .00077     0.99   0.321    -.0007443    .0022741
+          4  {\VBAR}   .0156169   .0011701    13.35   0.000     .0133235    .0179103
+          5  {\VBAR}    .030048   .0017751    16.93   0.000     .0265689    .0335272
+          6  {\VBAR}   .0011728   .0011712     1.00   0.317    -.0011227    .0034683
+\HLI{13}{\BOTT}\HLI{64}
+{\smallskip}

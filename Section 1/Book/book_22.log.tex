@@ -1,0 +1,37 @@
+. tab college withdraw, row
+{\smallskip}
+{\TLC}\HLI{16}{\TRC}
+{\VBAR} Key            {\VBAR}
+{\LFTT}\HLI{16}{\RGTT}
+{\VBAR}   {\sltt{frequency}}    {\VBAR}
+{\VBAR} {\sltt{row percentage}} {\VBAR}
+{\BLC}\HLI{16}{\BRC}
+{\smallskip}
+            {\VBAR} Withdraw from course?
+    College {\VBAR} No withdr   Withdraw {\VBAR}     Total
+\HLI{12}{\PLUS}\HLI{22}{\PLUS}\HLI{10}
+   Business {\VBAR}     9,079        219 {\VBAR}     9,298 
+            {\VBAR}     97.64       2.36 {\VBAR}    100.00 
+\HLI{12}{\PLUS}\HLI{22}{\PLUS}\HLI{10}
+Engineering {\VBAR}    15,577        285 {\VBAR}    15,862 
+            {\VBAR}     98.20       1.80 {\VBAR}    100.00 
+\HLI{12}{\PLUS}\HLI{22}{\PLUS}\HLI{10}
+      Total {\VBAR}    24,656        504 {\VBAR}    25,160 
+            {\VBAR}     98.00       2.00 {\VBAR}    100.00 
+{\smallskip}
+. logistic withdraw i.college
+{\smallskip}
+Logistic regression                             Number of obs     =     25,160
+                                                LR chi2(1)        =       9.13
+                                                Prob > chi2       =     0.0025
+Log likelihood = -2465.2122                     Pseudo R2         =     0.0018
+{\smallskip}
+\HLI{13}{\TOPT}\HLI{64}
+    withdraw {\VBAR} Odds Ratio   Std. Err.      z    P>|z|     [95\% Conf. Interval]
+\HLI{13}{\PLUS}\HLI{64}
+     college {\VBAR}
+Engineering  {\VBAR}   .7584989   .0688913    -3.04   0.002     .6348102    .9062875
+       _cons {\VBAR}   .0241216   .0016495   -54.47   0.000     .0210959    .0275813
+\HLI{13}{\BOTT}\HLI{64}
+Note: _cons estimates baseline odds.
+{\smallskip}
